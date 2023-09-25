@@ -1,16 +1,45 @@
 # Operaciones con polinomios
 
- ![capidbcolor](![image](https://github.com/rmelgo/Operaciones-con-polinomios/issues/1#issue-1912368412)
+![polinomios](https://github.com/rmelgo/Operaciones-con-polinomios/assets/145989723/d4fb4e43-b340-464b-b91c-ad76af4004f0)
 
-# -Introducción
+# - Introducción
 
-Proyecto web full-stack de enseñanza de Bases de Datos potenciado con Inteligencia Artificial. Se trata de un proyecto de exploración sobre las nuevas IA en un uso académico. Explora redes neuronales y ChatGPT (con herramientas como Fine-Tuning, Prompt Engineering y limitación de recursos a dicha API). Este proyecto se ha planteado de forma local en una máquina con SO Windows 10 y con una versión de Python3.
+Proyecto realizado en la asignatura de Computadores II del grado de Ingenieria Informática de la Universidad de Salamanca.  
+  
+El principal objetivo de este proyecto es la realización de un programa funcional en lenguaje ensamblador que permita realizar operaciones básicas con polinomios.
 
-# ~ Objetivo del proyecto
+# - Comentarios sobre el entorno de ejecución
 
-El principal objetivo de este proyecto fue crear una herramienta de ayuda para los estudiantes de la asignatura de Bases de Datos utilizando herramientas de Inteligencia Artificial. Además, se trata de un proyecto que implicó una inversión significativa en el aprendizaje de las técnicas de Procesamiento del Lenguaje Natural (NLP, por sus siglas en inglés) en el contexto de las Inteligencias Artificiales. Exploramos todas las posibilidades de ChatGPT, tanto en la ingeniería de prompts como en la creación de un modelo mucho más definido mediante Fine-Tuning (Afinamiento). También investigamos la evolución de ChatGPT en comparación con modelos antiguos de Procesamiento de Lenguaje Natural, como la red neuronal creada conocida como Bag of Words (Bolsa de Palabras), que permite a los estudiantes plantear preguntas más específicas sobre el funcionamiento de la web.
+Para ejecutar este programa se requerira de una distribución del Sistema Operativo **GNU/Linux**.    
 
-# ~ Distribución y ejecución del proyecto
+Para poder ensamblar, enlazar y compilar correctamente el programa, se debera ejecutar el script de bash llamado ***instaladorcii.sh***, el cual se encuentra dentro de este repositorio.   
 
-El proyecto se divide en dos carpetas Front y Back, para poder ejecutar el proyecto se debe hacer un "npm run build" del proyecto del Frontend para añadir dentro del Backend. En este Build, se debe añadir las claves de la API de ChatGPT para poder hacer las llamadas a la misma (front/dbcapy/src/containers/Teoria.js line 167, front/dbcapy/src/containers/Practica.js line 73). 
-Ya con estos cambios, solo hace falta correr el proyecto con Django con la orden "python -m manage runserver" dentro del fichero de Backend. Recordar que este comando se usa para un Sistema Operativo Windows 10. 
+Este script comprobará que tenéis la distribución de Linux compatible y se descargará y configurará los programas *as6809*, *aslink* y *m6809-run* (necesarios para el ensablado, enlazado y compilado) adecuadamente, siempre que dispongáis de una conexión a Internet en vuestro ordenador.
+
+# - Pasos necesarios para ejecutar el programa
+
+**Paso 1: Ensamblar el programa**  
+
+Para ello se debe introducir el siguente comando:    
+
+```as6809 -o practica_final.asm```
+
+Tras ejecutar este comando, se generará un fichero llamado *practica_final.rel*
+
+**Paso 2: Enlazar el programa**  
+
+Para ello se debe introducir el siguente comando:    
+
+```aslink -s practica_final.rel```
+
+Tras ejecutar este comando, se generará un fichero llamado *practica_final.s19*
+
+**Paso 3: Ejecutar el programa**  
+
+Para ello se debe introducir el siguente comando:    
+
+```m6809-run practica_final.s19```
+
+Tras ejecutar este comando, el programa se habra ejecutado correctamente.
+
+
