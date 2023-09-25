@@ -42,4 +42,10 @@ Para ello se debe introducir el siguente comando:
 
 Tras ejecutar este comando, el programa se habra ejecutado correctamente.
 
+# - Ejemplo de ejecución
 
+En la siguiente imagen, se muestra un ejemplo del uso y funcionamiento del programa:    
+
+<p>
+  <img src="https://github.com/rmelgo/Operaciones-con-polinomios/assets/145989723/88f585eb-965c-4fd9-86c9-93a796561b5d" />
+</p>
