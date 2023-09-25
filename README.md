@@ -1,7 +1,6 @@
 # Operaciones con polinomios
 
- ![capidbcolor](![image](https://github.com/rmelgo/Operaciones-con-polinomios/assets/145989723/659787a6-bbed-484f-b308-2655f3ab150d))
-
+ ![capidbcolor](![image](https://github.com/rmelgo/Operaciones-con-polinomios/issues/1#issue-1912368412)
 
 # -Introducción
 
